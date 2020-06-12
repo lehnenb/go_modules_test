@@ -2,6 +2,7 @@ package hello
 
 import (
 	"fmt"
+	"github.com/fatih/color"
 	"time"
 )
 
@@ -13,5 +14,5 @@ func SayHelloAndOneMoreThing(name string) {
 
 func printHours() {
 	hours, minutes, _ := time.Now().Clock()
-	fmt.Println(fmt.Sprintf("%d:%02d ", hours, minutes))
+	fmt.Print(color.BlueString(fmt.Sprintf("%d:%02d - ", hours, minutes)))
 }
