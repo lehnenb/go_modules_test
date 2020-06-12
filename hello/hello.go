@@ -2,7 +2,7 @@ package hello
 
 import "fmt"
 
-// SayHello function: Says hello
-func SayHello() {
-	fmt.Println("Hello World")
+// SayHelloAndOneMoreThing function: Says hello
+func SayHelloAndOneMoreThing(name string) {
+	fmt.Printf("Hello World, %s", name)
 }
